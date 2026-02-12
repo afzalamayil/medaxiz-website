@@ -1,157 +1,492 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MedAxiz Healthcare Services</title>
-<style>
-body {
-    margin:0;
-    font-family: Arial, sans-serif;
-    background:#f4f8fb;
-}
-header {
-    background:#0c496f;
-    color:white;
-    padding:20px;
-    text-align:center;
-}
-nav {
-    background:#08334d;
-    padding:10px;
-    text-align:center;
-}
-nav a {
-    color:white;
-    margin:0 15px;
-    text-decoration:none;
-    font-weight:bold;
-}
-section {
-    padding:50px 20px;
-    max-width:1100px;
-    margin:auto;
-}
-h2 {
-    color:#0c496f;
-}
-.hero {
-    background:#e3f1fa;
-    text-align:center;
-    padding:80px 20px;
-}
-.hero h1 {
-    color:#0c496f;
-    font-size:36px;
-}
-.button {
-    background:#0c496f;
-    color:white;
-    padding:12px 25px;
-    text-decoration:none;
-    border-radius:5px;
-}
-footer {
-    background:#0c496f;
-    color:white;
-    text-align:center;
-    padding:20px;
-}
-.services-grid {
-    display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
-    gap:20px;
-}
-.service-box {
-    background:white;
-    padding:20px;
-    border-radius:8px;
-    box-shadow:0 4px 10px rgba(0,0,0,0.1);
-}
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MedAxiz Healthcare Services | Revenue Cycle Management & Claim Validation</title>
+  <meta name="description" content="MedAxiz Healthcare Services delivers premium RCM, claim validation, pre-scrubbing, rule-engine audits, denial reduction, analytics, and UAE-compliant billing operations."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-
-<header>
-    <h1>MedAxiz Healthcare Services</h1>
-    <p>Optimizing Revenue. Accelerating Healthcare Growth.</p>
-</header>
-
-<nav>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#why">Why Choose Us</a>
-    <a href="#contact">Contact</a>
-</nav>
-
-<div class="hero">
-    <h1>Revenue Cycle Management Experts in UAE & GCC</h1>
-    <p>Driving accuracy, compliance, and faster reimbursements.</p>
-    <br>
-    <a href="#contact" class="button">Get in Touch</a>
-</div>
-
-<section id="about">
-    <h2>About Us</h2>
-    <p>
-        MedAxiz Healthcare Services is a specialized Revenue Cycle Management (RCM) partner
-        supporting medical centers, hospitals, and clinics across UAE and the GCC region.
-        We focus on compliance-driven medical coding, claims submission, denial management,
-        and revenue acceleration.
-    </p>
-</section>
-
-<section id="services">
-    <h2>Our Services</h2>
-    <div class="services-grid">
-        <div class="service-box">
-            <h3>Medical Coding</h3>
-            <p>CPT & ICD-10 compliant coding with high accuracy standards.</p>
-        </div>
-        <div class="service-box">
-            <h3>Claims Submission</h3>
-            <p>Timely submission with reduced rejection rates.</p>
-        </div>
-        <div class="service-box">
-            <h3>Denial Management</h3>
-            <p>Structured root cause analysis and resubmission strategy.</p>
-        </div>
-        <div class="service-box">
-            <h3>Insurance Follow-Up</h3>
-            <p>Dedicated AR team to accelerate collections.</p>
-        </div>
-        <div class="service-box">
-            <h3>Audit & Compliance</h3>
-            <p>Internal audits aligned with DHA / DOH / MOH regulations.</p>
-        </div>
-        <div class="service-box">
-            <h3>RCM Outsourcing</h3>
-            <p>End-to-end revenue cycle support tailored to your facility.</p>
-        </div>
+  <!-- Top Bar -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <div class="topbar__left">
+        <span class="chip">UAE • RCM • Claim Validation</span>
+      </div>
+      <div class="topbar__right">
+        <a class="topbar__link" href="mailto:business@medaxiz.com">business@medaxiz.com</a>
+        <span class="sep">•</span>
+        <a class="topbar__link" href="mailto:admin@medaxiz.com">admin@medaxiz.com</a>
+        <span class="sep">•</span>
+        <a class="topbar__link" href="#enquiry">Enquiry</a>
+      </div>
     </div>
-</section>
+  </div>
 
-<section id="why">
-    <h2>Why Choose MedAxiz?</h2>
-    <ul>
-        <li>✔ 98%+ Coding Accuracy</li>
-        <li>✔ Reduced Rejection Rates</li>
-        <li>✔ Faster Payment Cycles</li>
-        <li>✔ Confidential & Secure Data Handling</li>
-        <li>✔ UAE Healthcare Regulatory Alignment</li>
-    </ul>
-</section>
+  <!-- Header -->
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="brand" href="#top">
+        <div class="brand__mark" aria-hidden="true">
+          <!-- Simple medical + tech mark -->
+          <svg viewBox="0 0 64 64" width="34" height="34" role="img" aria-label="MedAxiz logo mark">
+            <defs>
+              <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#1E6BFF"/>
+                <stop offset="1" stop-color="#00B3FF"/>
+              </linearGradient>
+            </defs>
+            <rect x="6" y="6" width="52" height="52" rx="14" fill="url(#g)"/>
+            <path d="M32 18v28M18 32h28" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="brand__text">
+          <div class="brand__name">MedAxiz</div>
+          <div class="brand__sub">Healthcare Services</div>
+        </div>
+      </a>
 
-<section id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: info@medaxiz.com</p>
-    <p>Location: United Arab Emirates</p>
-</section>
+      <nav class="nav" aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#technology">Technology</a>
+        <a href="#mission">Mission & Vision</a>
+        <a href="#why">Why MedAxiz</a>
+        <a class="btn btn--sm" href="#enquiry">Get a Proposal</a>
+      </nav>
 
-<footer>
-    <p>© 2026 MedAxiz Healthcare Services. All Rights Reserved.</p>
-</footer>
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
 
+    <div class="nav__drawer" id="navDrawer" aria-hidden="true">
+      <a href="#services">Services</a>
+      <a href="#technology">Technology</a>
+      <a href="#mission">Mission & Vision</a>
+      <a href="#why">Why MedAxiz</a>
+      <a href="#enquiry" class="btn btn--full">Get a Proposal</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero__grid">
+      <div class="hero__content">
+        <div class="kicker reveal">Premium RCM + Claim Validation for UAE Healthcare</div>
+        <h1 class="reveal">
+          Reduce rejections with <span class="accent">pre-scrubbing</span>, rule-engines & payer-aware validation.
+        </h1>
+        <p class="lead reveal">
+          MedAxiz Healthcare Services helps clinics, hospitals and medical centers improve first-pass acceptance through
+          <strong>dual-layer claim validation</strong>, denial prevention, clean submissions and actionable analytics.
+        </p>
+
+        <div class="hero__cta reveal">
+          <a class="btn" href="#enquiry">Request a Consultation</a>
+          <a class="btn btn--ghost" href="#technology">See our validation approach</a>
+        </div>
+
+        <div class="stats reveal" role="list">
+          <div class="stat" role="listitem">
+            <div class="stat__num"><span data-counter="30">0</span>–<span data-counter="40">0</span>%</div>
+            <div class="stat__label">Potential rejection reduction with early validation*</div>
+          </div>
+          <div class="stat" role="listitem">
+            <div class="stat__num"><span data-counter="24">0</span>h</div>
+            <div class="stat__label">Fast feedback loop for audit corrections</div>
+          </div>
+          <div class="stat" role="listitem">
+            <div class="stat__num"><span data-counter="6">0</span>+</div>
+            <div class="stat__label">RCM pillars: standardization, technology, efficiency, patient focus</div>
+          </div>
+        </div>
+
+        <div class="note reveal">
+          *Based on our “catch errors before submission” model, inspired by payer-backend simulation concepts. :contentReference[oaicite:2]{index=2}
+        </div>
+      </div>
+
+      <!-- Hero Visual (animated dashboard + flow) -->
+      <div class="hero__visual reveal">
+        <div class="glass card--dashboard">
+          <div class="card--dashboard__top">
+            <div class="dots"><span></span><span></span><span></span></div>
+            <div class="pill">Live RCM Insights</div>
+          </div>
+
+          <div class="dash">
+            <div class="metric">
+              <div class="metric__label">Submitted</div>
+              <div class="metric__value">AED <span class="mono" data-counter="128">0</span>K</div>
+              <div class="bar"><span style="width:78%"></span></div>
+            </div>
+            <div class="metric">
+              <div class="metric__label">Paid</div>
+              <div class="metric__value">AED <span class="mono" data-counter="94">0</span>K</div>
+              <div class="bar"><span style="width:62%"></span></div>
+            </div>
+            <div class="metric">
+              <div class="metric__label">Rejected</div>
+              <div class="metric__value"><span class="mono" data-counter="7">0</span>%</div>
+              <div class="bar"><span style="width:28%"></span></div>
+            </div>
+          </div>
+
+          <div class="flow">
+            <div class="flow__node">
+              <div class="icon">1</div>
+              <div>
+                <div class="flow__title">Pre-Scrub</div>
+                <div class="flow__sub">Rules • Bundling • Duplicates</div>
+              </div>
+            </div>
+            <div class="flow__arrow"></div>
+            <div class="flow__node">
+              <div class="icon">2</div>
+              <div>
+                <div class="flow__title">Validate</div>
+                <div class="flow__sub">Medical + Technical checks</div>
+              </div>
+            </div>
+            <div class="flow__arrow"></div>
+            <div class="flow__node">
+              <div class="icon">3</div>
+              <div>
+                <div class="flow__title">Submit</div>
+                <div class="flow__sub">Clean claim • Faster payment</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="badge">
+            <span class="pulse"></span>
+            Standards-aligned: UAE + International
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Logos / trust strip -->
+  <section class="trust">
+    <div class="container trust__inner">
+      <p class="trust__text">Built for UAE payer workflows • Denial prevention • Audit readiness • Analytics</p>
+      <div class="trust__chips">
+        <span>Pre-authorization aware</span>
+        <span>Claims submission</span>
+        <span>Resubmissions</span>
+        <span>Reconciliation</span>
+        <span>Reporting</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section__head">
+        <h2 class="reveal">RCM Services that feel “enterprise-grade”</h2>
+        <p class="reveal">
+          We combine domain expertise with structured processes to improve accuracy, speed and cashflow. :contentReference[oaicite:3]{index=3}
+        </p>
+      </div>
+
+      <div class="grid grid--3">
+        <article class="card reveal">
+          <div class="card__icon">🏥</div>
+          <h3>End-to-End Claims Management</h3>
+          <p>Submission → follow-up → resubmission, with rejection mitigation strategies and documentation discipline.</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__icon">🧾</div>
+          <h3>Specialized Medical Coding</h3>
+          <p>ICD/CPT validation with internal checks and continuous improvement to reduce downcoding & recoveries.</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__icon">📊</div>
+          <h3>Reporting & Analytics</h3>
+          <p>Denial trend analysis, payer performance, AR aging and revenue visibility for better decisions.</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__icon">🧠</div>
+          <h3>CDI & Internal Audits</h3>
+          <p>Clinical documentation improvement reviews and internal audits to improve compliance and medical necessity.</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__icon">🔁</div>
+          <h3>Payment Reconciliation</h3>
+          <p>Structured reconciliation for financial closure and accurate AR tracking across payers/TPAs.</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__icon">🎓</div>
+          <h3>Training & Enablement</h3>
+          <p>Targeted training for doctors and admin teams to reduce avoidable documentation & coding errors.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technology (Premium) -->
+  <section class="section section--alt" id="technology">
+    <div class="container">
+      <div class="section__head">
+        <h2 class="reveal">Technology-driven claim validation & pre-scrubbing</h2>
+        <p class="reveal">
+          We use rule engines, payer logic simulation and reverse-engineering patterns from real adjudication outcomes to catch issues early.
+          This approach is consistent with the “dual-layer validation” concept in your deck. :contentReference[oaicite:4]{index=4}
+        </p>
+      </div>
+
+      <div class="grid grid--2">
+        <div class="panel reveal">
+          <h3>Dual-Layer Validation</h3>
+          <div class="dual">
+            <div class="dual__item">
+              <div class="dual__tag">Medical Validator</div>
+              <ul>
+                <li>Medical necessity alignment</li>
+                <li>ICD–CPT linkage & clinical justification</li>
+                <li>Bundling/conflict detection</li>
+              </ul>
+            </div>
+            <div class="dual__item">
+              <div class="dual__tag">Technical Validator</div>
+              <ul>
+                <li>Payer-specific rule checks</li>
+                <li>Duplicate / follow-up validations</li>
+                <li>Submission-ready, schema-safe claims</li>
+              </ul>
+            </div>
+          </div>
+          <div class="callout">
+            <strong>Outcome:</strong> fewer rejections, faster reimbursements, improved first-pass acceptance.
+          </div>
+        </div>
+
+        <div class="panel reveal">
+          <h3>What we validate (examples)</h3>
+          <div class="checks">
+            <div class="check">✅ Eligibility / pre-auth readiness</div>
+            <div class="check">✅ Coding logic (ICD/CPT mapping)</div>
+            <div class="check">✅ Exclusions / conflict rules</div>
+            <div class="check">✅ Frequency / duplicates / follow-up</div>
+            <div class="check">✅ Documentation completeness indicators</div>
+            <div class="check">✅ Payer-specific submission rules</div>
+          </div>
+
+          <div class="mini-flow">
+            <div class="mini-flow__step">Data Intake</div>
+            <div class="mini-flow__step">Pre-Scrub</div>
+            <div class="mini-flow__step">Validate</div>
+            <div class="mini-flow__step">Submit</div>
+            <div class="mini-flow__step">Track & Improve</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission & Vision -->
+  <section class="section" id="mission">
+    <div class="container">
+      <div class="section__head">
+        <h2 class="reveal">Mission & Vision</h2>
+        <p class="reveal">
+          Inspired by the mission/vision language in your material, adapted for MedAxiz. :contentReference[oaicite:5]{index=5}
+        </p>
+      </div>
+
+      <div class="grid grid--2">
+        <div class="card card--soft reveal">
+          <h3>Our Mission</h3>
+          <p>
+            To modernize revenue cycle operations using technology, analytics and standards-based processes—
+            transforming complex claim workflows into fast, accurate and compliant submissions.
+          </p>
+        </div>
+        <div class="card card--soft reveal">
+          <h3>Our Vision</h3>
+          <p>
+            To be a trusted UAE partner for healthcare providers by reducing claim rejections, streamlining payments,
+            and strengthening financial stability across the healthcare ecosystem.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why MedAxiz -->
+  <section class="section section--alt" id="why">
+    <div class="container">
+      <div class="section__head">
+        <h2 class="reveal">Why MedAxiz</h2>
+        <p class="reveal">Professional expertise + analytical precision + technology-driven execution. :contentReference[oaicite:6]{index=6}</p>
+      </div>
+
+      <div class="grid grid--3">
+        <div class="card reveal">
+          <h3>Professional Expertise</h3>
+          <p>Seasoned RCM professionals with strong UAE payer workflow understanding.</p>
+        </div>
+        <div class="card reveal">
+          <h3>Analytical Precision</h3>
+          <p>Actionable insights using trend analysis, root-cause mapping and measurable KPIs.</p>
+        </div>
+        <div class="card reveal">
+          <h3>Technology-Driven</h3>
+          <p>Rule engines, validation layers, and process automation to reduce manual errors.</p>
+        </div>
+        <div class="card reveal">
+          <h3>Standardization</h3>
+          <p>Consistent SOPs aligned with UAE and international documentation & coding standards.</p>
+        </div>
+        <div class="card reveal">
+          <h3>Fast Response</h3>
+          <p>Structured correction workflow with quick turnaround for audit feedback loops.</p>
+        </div>
+        <div class="card reveal">
+          <h3>Client-Focused</h3>
+          <p>Dedicated support and continuous improvement to protect your revenue.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Enquiry Form -->
+  <section class="section" id="enquiry">
+    <div class="container">
+      <div class="section__head">
+        <h2 class="reveal">Enquiry / Request a Proposal</h2>
+        <p class="reveal">
+          Share your facility details and we’ll respond with a suggested scope, timeline, and next steps.
+        </p>
+      </div>
+
+      <div class="grid grid--2">
+        <div class="panel reveal">
+          <h3>Contact</h3>
+          <p class="muted">Email us directly:</p>
+          <ul class="contact-list">
+            <li><a href="mailto:business@medaxiz.com">business@medaxiz.com</a></li>
+            <li><a href="mailto:azeez@medaxiz.com">azeez@medaxiz.com</a></li>
+            <li><a href="mailto:admin@medaxiz.com">admin@medaxiz.com</a></li>
+            <li><a href="mailto:finance@medaxiz.com">finance@medaxiz.com</a></li>
+          </ul>
+
+          <div class="info-card">
+            <div class="info-card__title">What happens after you submit?</div>
+            <ol class="steps">
+              <li>We review your message and payer mix</li>
+              <li>We propose a validation + RCM approach</li>
+              <li>We schedule a call to finalize scope</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="panel reveal">
+          <!-- Netlify Forms (FREE) -->
+          <form name="enquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html" class="form">
+            <input type="hidden" name="form-name" value="enquiry" />
+            <p class="hidden">
+              <label>Don’t fill this out: <input name="bot-field" /></label>
+            </p>
+
+            <div class="form__row">
+              <label>Full Name</label>
+              <input required name="name" placeholder="Your name" />
+            </div>
+
+            <div class="form__row">
+              <label>Email</label>
+              <input required name="email" type="email" placeholder="name@company.com" />
+            </div>
+
+            <div class="form__row">
+              <label>Phone / WhatsApp</label>
+              <input name="phone" placeholder="+971..." />
+            </div>
+
+            <div class="form__row">
+              <label>Facility / Company</label>
+              <input name="company" placeholder="Clinic / Hospital / Medical Center" />
+            </div>
+
+            <div class="form__row">
+              <label>What do you need?</label>
+              <select name="topic" required>
+                <option value="" disabled selected>Select</option>
+                <option>RCM (End-to-End)</option>
+                <option>Claim Validation / Pre-Scrubbing</option>
+                <option>Denial / Rejection Reduction</option>
+                <option>Analytics & Dashboards</option>
+                <option>Training (Doctors/Admin/Coders)</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <div class="form__row">
+              <label>Message</label>
+              <textarea required name="message" rows="5" placeholder="Tell us your problem, payers/TPA mix, volumes, timelines..."></textarea>
+            </div>
+
+            <button class="btn btn--full" type="submit">Submit Enquiry</button>
+            <p class="fineprint">This form is protected with a spam honeypot and submits securely via Netlify.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <div class="footer__brand">MedAxiz Healthcare Services</div>
+        <p class="muted">
+          Premium revenue cycle services and technology-driven claim validation designed for UAE healthcare operations.
+        </p>
+      </div>
+
+      <div>
+        <div class="footer__title">Quick Links</div>
+        <div class="footer__links">
+          <a href="#services">Services</a>
+          <a href="#technology">Technology</a>
+          <a href="#mission">Mission & Vision</a>
+          <a href="#enquiry">Enquiry</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="footer__title">Email</div>
+        <div class="footer__links">
+          <a href="mailto:business@medaxiz.com">business@medaxiz.com</a>
+          <a href="mailto:admin@medaxiz.com">admin@medaxiz.com</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <span>© <span id="year"></span> MedAxiz Healthcare Services. All rights reserved.</span>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp (optional link placeholder) -->
+  <a class="whatsapp" href="#enquiry" aria-label="Open enquiry">
+    ✉️
+  </a>
+
+  <script src="script.js"></script>
 </body>
 </html>
